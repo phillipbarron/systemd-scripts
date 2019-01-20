@@ -14,26 +14,26 @@ I have included a naieve bake-script example. Much of the work currently happeni
 chmod +x ../foo.service
 ```
 
-1. copy the sevice file to `/etc/systemd/system/`
+2. copy the sevice file to `/etc/systemd/system/`
 
 ```bash
 cp ../foo.service /etc/systemd/system/foo.service
 ```
 
-1. Make a directory for your app and move all the stuff you need in there
+3. Make a directory for your app and move all the stuff you need in there
 
 ```bash
 mkdir -p /usr/lib/foo/
 cp -R . /usr/lib/foo/
 ```
 
-1. Add and specified Environment files you need (ours will need an AWS account number in order to execute)
+4. Add and specified Environment files you need (ours will need an AWS account number in order to execute)
 
 ```bash
 cp ../foo.conf /usr/lib/foo/foo.conf
 ```
 
-1. now enable and start the service
+5. now enable and start the service
 
 ```bash
 systemctl enable foo.service
