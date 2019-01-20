@@ -1,0 +1,16 @@
+{
+  "name": "service-testing",
+  "version": "1.0.0",
+  "description": "testing launvh through systemd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-credentials": "node scripts/build-credentials.js"
+  },
+  "author": "PB",
+  "license": "ISC",
+  "dependencies": {
+    "@bbc/cps-secret-writer": "^0.1.4"
+  }
+}
+  

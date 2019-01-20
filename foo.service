@@ -1,0 +1,11 @@
+[Unit]
+Description=Foo
+After=network.target
+
+[Service]
+ExecStart=/bin/bash -c "cd /usr/lib/foo && npm run build-credentials"
+Type=simple
+EnvironmentFile=/usr/lib/foo/foo.conf
+
+[Install]
+WantedBy=multi-user.target
