@@ -39,3 +39,4 @@ cp ../foo.conf /usr/lib/foo/foo.conf
 systemctl enable foo.service
 systemctl start foo.service
 ```
+We can omit the `systemctl start foo.service` if we expect a reboot (ie, an AWS image deployment)
