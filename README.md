@@ -1,4 +1,4 @@
-# Testing out some scripts-as-systemd service ideas
+# Testing out some systemd script ideas
 
 This is to overcome an issue faced where we need Google application credentials written safely to the file-system. The credentials are stored in AWS Secrets manager and we are using the [cps-secret-writer](https://github.com/bbc/cps-secret-writer) to do the work of getting those & writing them somewhere - the problem is when that call is made. We cannot do this pre-build as this will result in plain-text credentials being packaged up.
 
