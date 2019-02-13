@@ -40,3 +40,6 @@ systemctl enable foo.service
 systemctl start foo.service
 ```
 We can omit the `systemctl start foo.service` if we expect a reboot (ie, an AWS image deployment)
+
+ps...
+this all worked and is all in use now!
